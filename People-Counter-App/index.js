@@ -14,24 +14,18 @@
 // console.log(bonusPoints)
 
 let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 let count = 0
 
 const incrementCount = () => {
-    count = (count + 1)
-    countEl.innerText = count
+    count += 1
+    countEl.textContent = count
 }
-
-let saveEl = doucment.getElementById("save-el")
 
 const saveCount = () => {
-        saveEl.innerText = ('countEl')
+    let countStr = count + " - "
+
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count=0
 }
-
-let names = "John"
-let greeting = "Hi, my name is"
-let myGreeting = names + " " + greeting + "!"
-console.log(myGreeting)
-
-
-
-
