@@ -11,94 +11,167 @@
     </head>
 
     <body>
-        <h1>My Goals For The Year</h1>
+        <header>
+            <h1>My Goals For The Year</h1>
+    
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learn HTML</a>
+                    </li>
+                    <li>
+                        <a href="#vacation">Planning a Vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
 
         <hr>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learn HTML</a>
-                </li>
-                <li>
-                    <a href="#vacation">Planning a Vacation</a>
-                </li>
-            </ul>
-        </nav>
+        <main>
+            <article id="html">
+                <h2>I'm Ready to Learn HTML</h2>
+                    <p>This is my first web page.</p>
+                    <section>
+                        <h3>This is HTML5</h3>
+                        <img src="img/buccaneers.png" alt="Buccaneers (football team) logo" title="I love the Buccaneers" width="125px" height="100px">
+                        <figure>
+                            <figcaption>
+                                An Example of HTML code
+                            </figcaption>
+                            <p>
+                                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                            </p>
+                        </figure>
+                    </section>
+                    <section>
+                        <h3>My Daily Schedule</h3>
+                        <p>Let me tell you</p>
+                            <ol>
+                                <li> a secret like the Masons.</li>
+                                <li> I get resources from <abbr title="Mozila Developer Network">
+                                    <a href="https://developer.mozilla.org/">MDN</a>
+                                </abbr>.</li>
+                            </ol>
+                            <aside>
+                                <details>
+                                    <summary>
+                                        Guess how <mark>many hours</mark> of I code per day
+                                    </summary>
+                                    <p>
+                                        I start at <time datetime="08:00"> 8 am </time> and I write code for <time datetime="PT3H">3 hours every morning.
+                                    </p>
+                                </details>
+                            </aside>
+                            <br>
+                            <table>
+                                <caption>My Daily Schedule</caption>
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th scope="col">Time</th>
+                                        <th scope="col">Activity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Morning</th>
+                                        <td>
+                                            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                        </td>
+                                        <td>Write Code</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Break</th>
+                                        <td>
+                                            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                                        </td>
+                                        <td>Eat Lunch</td>
+                                    </tr>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Afternoon</th>
+                                        <td>
+                                            <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                                        </td>
+                                        <td>Study for Other Courses</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Evening</th>
+                                        <td rowspan="2">All Other Times</td>
+                                        <td>Free Time</td>                                    
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Night</th>
+                                        <td>Sleep</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3">And that's what I do everyday. 5 days a week. Just eat, sleep, code and recharge!</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                    </section>
+            </article>
 
-    <hr>
+        <hr>
 
-    <section id="html">
-        <h2>I'm Ready to Learn HTML</h2>
-            <p>This is my first web page.</p>
-            <img src="img/buccaneers.png" alt="Buccaneers (football team) logo" title="I love the Buccaneers" width="125px" height="100px">
-            <figure>
-                <figcaption>
-                    An Example of HTML code
-                </figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-                </p>
-            </figure>
+            <article id="vacation">
+                <h2>I'm Also Planning a Vacation</h2>
+                <p>I've been working hard and <em>really need a getaway</em>.</p>
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you</p>
-            <ol>
-                <li> a secret like the Masons.</li>
-                <li> I get resources from <abbr title="Mozila Developer Network">
-                    <a href="https://developer.mozilla.org/">MDN</a>
-                </abbr>.</li>
-            </ol>
-    </section>
+                <section>
+                <h3>Places I'd Like to Visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Grand Canyon</p>
+                        <figure>
+                            <img src="img/grand-canyon.jpg" alt="The Grandest Canyon" title="My trip to the Grand Canyon" width="300px" height="200px" loading="lazy">
+                            <figcaption>
+                                Grand Canyon Getaway
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Maragaritaville Island Reserve Riviera Cancun<br>
+                            Bahia Petempich Puerto Morelos, Mexico<br> Colonia Morelos, Mexico 77580
+                        </address>
+                        <figure>
+                            <img src="img/coronado-img.jpg" alt="Definately a Resort in Mexico" title="Mexican Vacation" width="300px" height="200px" loading="lazy">
+                            <figcaption>
+                                A Mexican Vacation Bruh
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                </section>
 
-    <hr>
+                <section>
+                <h3>Places I'd Like to Avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
 
-    <section id="vacation">
-        <h2>I'm Also Planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a getaway</em>.</p>
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
 
-        <h3>Places I'd Like to Visit</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about the Grand Canyon</p>
-                <figure>
-                    <img src="img/grand-canyon.jpg" alt="The Grandest Canyon" title="My trip to the Grand Canyon" width="300px" height="200px" loading="lazy">
-                    <figcaption>
-                        Grand Canyon Getaway
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <p>I've heard good things about going here:</p>
-                <address>
-                    Maragaritaville Island Reserve Riviera Cancun<br>
-                    Bahia Petempich Puerto Morelos, Mexico<br> Colonia Morelos, Mexico 77580
-                </address>
-                <figure>
-                    <img src="img/coronado-img.jpg" alt="Definately a Resort in Mexico" title="Mexican Vacation" width="300px" height="200px" loading="lazy">
-                    <figcaption>
-                        A Mexican Vacation Bruh
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <h3>Places I'd Like to Avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold</strong>!</dd>
-
-            <dt>South Pole</dt>
-            <dd>This is also cold.</dd>
-
-            <dt>Mountain Tops</dt>
-            <dd>These are also cold.</dd>
-        </dl>
-    </section>
-
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Thomas Gonzales</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+                </section>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Thomas Gonzales</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
     </body>
 </html>
